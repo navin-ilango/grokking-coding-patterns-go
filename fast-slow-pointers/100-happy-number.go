@@ -1,4 +1,4 @@
-package main
+package fastslowpointers
 
 func isHappy(num int) bool {
 
