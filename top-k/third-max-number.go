@@ -42,9 +42,10 @@ func thirdMax(nums []int) int {
 		}
 	}
 
-	if len(nums) < 3 {
+	if h.Len() < 3 {
 		return nums[0]
 	}
 
-	return 0
+	// The root of the min-heap of size 3 will be the 3rd maximum number
+	return heap.Pop(h).(int)
 }
