@@ -1,5 +1,7 @@
 package kwaymerge
 
+// Uses backward traversal to merge two sorted arrays into the first array in place.
+
 func mergeSorted(nums1 []int, m int, nums2 []int, n int) []int {
 	p1, p2 := m-1, n-1
 	p := m + n - 1
